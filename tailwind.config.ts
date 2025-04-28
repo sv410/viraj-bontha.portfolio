@@ -1,7 +1,7 @@
 import type { Config } from "tailwindcss"
 
 const config = {
-  darkMode: false, // Disable dark mode
+  darkMode: false,
   content: [
     "./pages/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
@@ -11,7 +11,9 @@ const config = {
   ],
   theme: {
     extend: {
-      // Your existing theme configuration
+      colors: {
+        border: "hsl(var(--border))", // Ensure this exists
+      },
     },
   },
   plugins: [],

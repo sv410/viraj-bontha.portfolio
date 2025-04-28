@@ -1,3 +1,5 @@
+'use client'
+
 import SectionHeading from "@/components/section-heading"
 import { Button } from "@/components/ui/button"
 import { Download } from "lucide-react"
