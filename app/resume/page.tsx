@@ -4,8 +4,11 @@ import { Download } from "lucide-react"
 import Link from "next/link"
 import { Card3D } from "@/components/card-3d"
 import { CanvasEffect } from "@/components/canvas-effect"
+import { useTheme } from "next-themes"
 
 export default function ResumePage() {
+  const { theme, setTheme } = useTheme()
+
   return (
     <main className="min-h-screen py-16 px-4 relative">
       <div className="absolute inset-0 z-0">
