@@ -2,7 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+{
+  "build": {
+    "command": "npm install --legacy-peer-deps && npm run build"
+  }
+}@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @layer utilities {
+  .border-border {
+    border-color: theme('colors.border'); /* Use the custom border color */
+  }
+}@layer utilities {
   .border-border {
     border-color: theme('colors.border'); /* Use the custom border color */
   }
